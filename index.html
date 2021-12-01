@@ -11,10 +11,9 @@
     crossorigin="anonymous">
     <!-- my css-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
     <!-- font awesome cdn-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <title>Portfolio</title>
 </head>
@@ -131,67 +130,96 @@
             </section>
         </div>
 
-          <!--NAVBAR FOR OPTIONS-->
-          <div class="container-fluid-nav bg-light ">
+        
+         <!--NAVBAR FOR OPTIONS--> 
+          <!-- <div class="container-fluid-nav bg-light ">
               <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light">
                   <div class="container-fluid">
-                    <button style="border:none" class="mx-3 navbar-brand bg-light">
-                      New Array</button>
+                    <button style="border:none" id="a_generate" class="mx-3 navbar-brand bg-light">
+                      Generate Array</button>
                     <div class="btn-container">
-                      <span class="size">Size&nbsp;&nbsp;<input type="range" max="120" min="20" steps=2></span>
+                      Size&nbsp;&nbsp;<input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
                       <div class="seperator"></div>
-                      <span>Speed&nbsp;&nbsp;<input type="range" max="100" min="10" steps=10></span>
+                      Speed&nbsp;&nbsp; <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
                     </div>
-                    
                     <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav ms-auto">
+
+
+
                             <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">Bubble</button>
+                              <button type="button" class="btn  btn-outline-secondary bubbleSort">Bubble</button>
                             </li>
 
                             <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">Selection</button>
+                              <button type="button" class="btn  btn-outline-secondary selectionSort">Selection</button>
                             </li>
                             <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">Insertion</button>
+                              <button type="button" class="btn  btn-outline-secondary insertionSort">Insertion</button>
                             </li>
 
                             <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">Quick</button>
+                              <button type="button" class="btn  btn-outline-secondary quickSort">Quick</button>
                             </li>
 
                             <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">Merge</button>
+                              <button type="button" class="btn  btn-outline-secondary mergeSort" >Merge</button>
                             </li>
 
-                            <li class="nav-item">
-                              <button type="button" class="btn  btn-outline-secondary">radix</button>
-                            </li>
-                      </ul>
+                            <!-- <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary heapSort">Heap</button>
+                            </li> -->
+
+
+                      <!--</ul>
                     </div>
                   </div>
                 </nav>
-                <section class="graphs">
-                    
-                </section>
-          </div>
+          </div> -->
+          <header class="algo p-3">
+            <nav>
+                <div class="row">
+                    <div class="col gap-2 d-sm-flex" id="newArray">
+                        <button style="border:none;" type="button" class=" newArray navbar-brand">Generate Array</button>
+                    </div>
+                    <div class="col" id="input">
+                        <span id="size">Size
+                            <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                        </span>
+                        <span id="speed">Speed
+                            <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                        </span>
+                    </div>
+                    <div class="col gap-2 d-sm-flex justify-content-end">
+                        <button type="button" class="btn btn-sm btn-outline-secondary bubbleSort">Bubble Sort</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary selectionSort">Selection Sort</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary insertionSort">Insertion Sort</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary quickSort">Quick Sort</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary mergeSort">Merge Sort</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+            
+        <div id="bars" class="flex-container"></div>
 
-
-
-
-
-
+    <script src="scripts/sorting.js"></script>
+    <script src="scripts/bubble.js"></script>
+    <script src="scripts/insertion.js"></script>
+    <script src="scripts/merge.js"></script>
+    <script src="scripts/quick.js"></script>
+    <script src="scripts/selection.js"></script>
 
     <!-- bootstrap js  -->
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
-    <!--myjs-->
-    <script src="app.js"></script>
+    
+    
 </body>
 </html>
