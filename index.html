@@ -11,6 +11,7 @@
     crossorigin="anonymous">
     <!-- my css-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <!-- font awesome cdn-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -20,7 +21,7 @@
 <body>
 
         <!-- Nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light shadow-lg">
+        <nav class="navbar w-100 navbar-expand-lg navbar-light shadow-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"> < VisualiZer/> </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,16 +129,55 @@
               <h1 class="p-3" id="project">VisualiZer</h1>
               <hr>
             </section>
-
         </div>
 
+          <!--NAVBAR FOR OPTIONS-->
+          <div class="container-fluid-nav bg-light ">
+              <nav class="navbar navbar-expand-lg shadow-lg navbar-light bg-light">
+                  <div class="container-fluid">
+                    <button style="border:none" class="mx-3 navbar-brand bg-light">
+                      New Array</button>
+                    <div class="btn-container">
+                      <span class="size">Size&nbsp;&nbsp;<input type="range" max="120" min="20" steps=2></span>
+                      <div class="seperator"></div>
+                      <span>Speed&nbsp;&nbsp;<input type="range" max="100" min="10" steps=10></span>
+                    </div>
+                    
+                    <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">Bubble</button>
+                            </li>
 
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">Selection</button>
+                            </li>
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">Insertion</button>
+                            </li>
 
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">Quick</button>
+                            </li>
 
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">Merge</button>
+                            </li>
 
-
-
-
+                            <li class="nav-item">
+                              <button type="button" class="btn  btn-outline-secondary">radix</button>
+                            </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <section class="graphs">
+                    
+                </section>
+          </div>
 
 
 
@@ -151,5 +191,7 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
+    <!--myjs-->
+    <script src="app.js"></script>
 </body>
 </html>
