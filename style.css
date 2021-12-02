@@ -47,7 +47,7 @@ a:hover{
     font-style: italic;
 }
 .desc-para{
-    font-family:"Parisienne";
+    /* font-family:"Parisienne"; */
     max-width:36rem;
 }
 .span-desc{
@@ -68,7 +68,7 @@ a:hover{
     height: 14vh;
 }
 .catalogue{
-    height:20vh;
+    height: 18vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,18 +109,22 @@ hr{
 .nav-item{
     margin:10px 0px 0px 10px;
 }
-.algo{
-
+.newArray {
+    border:none;
+    background-color: white;
+}
+.newArray:hover{
+    transform: scale(1.1);
+    transition:0.2s;
 }
 .flex-container{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap:nowrap;
     width: 100%;
     height: 500px;
     justify-content: center;
-    transition: 1s all ease;
-    height: 93.5vh;
+    height:93.5vh;
 }
 #input{
     display: flex;
@@ -129,8 +133,18 @@ hr{
 }
 .flex-item{
     /* margin:5px; */
-    background: rgb(120, 248, 248);
+    background: rgb(119, 211, 211);
     border: 1px solid black;
     width: 10px;
     transition: 0.1s all ease;
+}
+.contact-us{
+    box-shadow: 12px 12px 24px black;
+}
+.fa-heart{
+    color:red;
+}
+
+.body-font{
+    height:85vh;
 }
